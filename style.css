@@ -1,0 +1,188 @@
+*{
+    box-sizing:border-box
+}
+
+
+body{
+    margin:0;
+    width: 100%;
+}
+
+.header{
+    background-color: #1d2126;
+    display: flex;
+    max-width: 1900px;
+    max-width: 1900px;
+    justify-content: space-around;
+}
+.container{
+    width:1200px;
+}
+
+    
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+.col-md-3{
+    flex:1;
+}
+.col-md-6{
+    flex:2;
+}
+
+.col-md-7{
+    flex:3;
+}
+
+
+.menu{
+    padding: 0px;
+    list-style: none;
+    display: flex;
+}
+
+
+.menu a{
+    color: #a4aead;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-weight:bold;
+    padding: 10px;
+
+
+}
+
+.menu a:hover{
+    border:1px solid #a4aead;
+    border-radius: 5px;
+    padding: 9px;
+
+}
+
+.menu a:active{
+    border:1px solid #39a492;
+    border-radius: 5px;
+    color: #39a492;
+    padding: 9px;
+}
+.menu li{
+    padding: 10px;
+}
+
+.search{
+    align-content: center;
+    justify-content: flex-end;
+    position: relative;
+    display: flex;
+}
+.search input{
+    width:190px;
+    height: 30px;
+    background-color:transparent;
+    border: 1px solid #a4aead;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    
+}
+.search input::placeholder{
+    color: #a4a4a4;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+    
+    
+}
+.search button{
+    width:20px;
+    height:20px;
+    background:url("img/search.png") no-repeat center;
+    border:none;
+    right: 15px;
+    top: 5px;
+    bottom: 0;
+    position: absolute;
+
+    
+}
+
+.main{
+    width:100%;
+}
+.slider{
+    display:flex;
+    position: relative;
+    overflow: hidden;
+    height: 660px;
+    width: 100%;
+    justify-content: center; 
+}
+.slider-slide1{
+    position: absolute;
+}
+
+.col-md-7{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    max-width: 1200px;
+}
+.slider-info{
+    width: 50%;
+}
+.col-md-7 p {
+    color:#ccd0d7;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    text-align: left;
+    display: inline-block;
+
+
+   
+
+}
+.main-item{
+    color:#fff;
+    font-size: 36px;
+    font-family: "Quattrocento Sans";
+    font-weight:bold;
+    text-transform: uppercase;
+
+}
+
+.view-more, .video-tour {
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 16px;
+    font-family: "Quattrocento Sans";
+    font-weight:bold;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background: transparent;
+    width: 125px;
+    padding: 15px;
+    margin: 5px;;
+
+}
+
+.view-more:hover, .video-tour:hover{
+    background-color:#23b7a4;
+    border:none;
+}
+
+
+
+
+
+
+
