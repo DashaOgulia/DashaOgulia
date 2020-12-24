@@ -1,44 +1,51 @@
+
+/*xs - mobile
+sm - tablet
+md - leptop
+lg - desctop
+*/
 *{
-    box-sizing:border-box
+    box-sizing:border-box;
 }
-
-
 body{
     margin:0;
-    width: 100%;
+    font-family: "Open Sans", sans-serif;
 }
-
+.container{
+    width:100%;
+    padding-left:15px;
+    padding-right:15px;
+    margin-left: auto;
+    margin-right:auto;
+}
+.row{
+    display:flex;
+    margin-left: -15px;
+    margin-right:-15px;
+    align-items: center;
+}
+.flex-wrap{
+    flex-wrap:wrap
+}
 .header{
     background-color: #1d2126;
     display: flex;
-    max-width: 1900px;
-    max-width: 1900px;
-    justify-content: space-around;
+    z-index:2
 }
-.container{
-    width:1200px;
-}
-
-    
-.row{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
+.sticky{
+    position: sticky;
+    top: 0;
 }
 
-
-.col-md-3{
-    flex:1;
-}
-.col-md-6{
-    flex:2;
+[class*="col-"]{
+    padding-left:15px;
+    padding-right:15px;
 }
 
-.col-md-7{
-    flex:3;
+.col-xs-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
 }
-
 
 .menu{
     padding: 0px;
@@ -110,12 +117,11 @@ body{
     top: 5px;
     bottom: 0;
     position: absolute;
-
-    
 }
 
 .main{
     width:100%;
+    background:url("img/font-img.png") no-repeat center;
 }
 .slider{
     display:flex;
@@ -179,10 +185,76 @@ body{
     background-color:#23b7a4;
     border:none;
 }
+.cover {
+    object-fit: cover;
+  }
 
 
+@media(min-width:768px){
+    .container{
+        max-width:720px;
+    }
+    .logo{
+        margin-top:10px;
+    } 
+}
 
+@media(min-width:992px){
+    .container{
+        max-width:960px;
+    }
+    .col-md-2{
+        flex: 0 0 16.6667%;
+    max-width: 16.6667%;
+    }
+    .col-md-8{
+        flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+    }
+    
+}
 
+@media(min-width:1200px){
+    .container{
+        max-width:1140px;
+    }
+}
 
+/*mobile only*/
+@media(max-width:767px){
+    .search{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+       }
+    .search input{
+        width: 120px;
+       }
+     .logo{
+        margin-top:10px;
+       }
+    .menu{
+        overflow-x: scroll;
+        }
+    .slider-info{
+        width: 100%;
+        }   
+}
 
-
+/*tablet only*/
+@media(max-width:991px){
+    .search{
+        position: absolute;
+        top: 10px;
+        right: 40px;
+       }
+    .menu{
+        justify-content: space-between;
+    }
+}
+/*laptop*/
+@media(max-width:1199px){
+   .menu{
+        place-content: flex-end;
+   }
+}
