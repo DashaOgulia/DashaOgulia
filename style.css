@@ -254,7 +254,4 @@ body{
 }
 /*laptop*/
 @media(max-width:1199px){
-   .menu{
-        place-content: flex-end;
-   }
-}
+  
