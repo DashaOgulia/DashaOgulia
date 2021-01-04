@@ -22,7 +22,7 @@ body{
     display:flex;
     margin-left: -15px;
     margin-right:-15px;
-    align-items: center;
+   
 }
 .flex-wrap{
     flex-wrap:wrap
@@ -47,6 +47,9 @@ body{
     max-width: 100%;
 }
 
+.header-menu{
+    align-items: center;
+}
 .menu{
     padding: 0px;
     list-style: none;
@@ -86,7 +89,6 @@ body{
 
 .search{
     align-content: center;
-    justify-content: flex-end;
     position: relative;
     display: flex;
 }
@@ -119,9 +121,14 @@ body{
     position: absolute;
 }
 
-.main{
+.block-1{
     width:100%;
     background:url("img/font-img.png") no-repeat center;
+   
+}
+.block-2{
+    width: 100%;
+    padding: 60px 0px;
 }
 .slider{
     display:flex;
@@ -129,38 +136,36 @@ body{
     overflow: hidden;
     height: 660px;
     width: 100%;
-    justify-content: center; 
 }
 .slider-slide1{
     position: absolute;
 }
 
 .col-md-7{
-    position: absolute;
     display: flex;
     align-items: center;
     top: 0;
     bottom: 0;
     max-width: 1200px;
 }
-.slider-info{
-    width: 50%;
-}
-.col-md-7 p {
+
+
+.description {
     color:#ccd0d7;
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
     text-align: left;
     display: inline-block;
 
-
-   
-
+}
+.bold{
+    font-weight:bold;
+    color:#8d8f92
 }
 .main-item{
     color:#fff;
     font-size: 36px;
-    font-family: "Quattrocento Sans";
+    font-family: "Quattrocento Sans", sans-serif;
     font-weight:bold;
     text-transform: uppercase;
 
@@ -170,7 +175,7 @@ body{
     text-transform: uppercase;
     color:#fff;
     font-size: 16px;
-    font-family: "Quattrocento Sans";
+    font-family: "Quattrocento Sans", sans-serif;
     font-weight:bold;
     border: 1px solid #fff;
     border-radius: 5px;
@@ -188,6 +193,327 @@ body{
 .cover {
     object-fit: cover;
   }
+.block-title{
+    display:flex;
+}
+h2{
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight:bold; 
+    font-size: 36px;
+    text-transform: uppercase;
+    color:#292f36;
+}
+h3{
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight:bold; 
+    font-size: 18px;
+    color: #292f36
+    
+}
+h3 a{
+    text-decoration: none;
+    color:#292f36;
+}
+
+.icon-h1{
+    width: 10px;
+    background-color: #ccd0d7;
+    margin: 30px 15px 30px 0px;
+    
+}
+.number-miniblock{
+    background-color:#23b7a4;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight:bold; 
+    font-size: 20px;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-right: 15px;
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.mini-block{
+    display: flex;;
+}
+.icon img{
+    background-color: #c8cdd0;
+    margin:1px;
+    width: 50px;
+    height: 50px;
+}
+.icons-block{
+        display: flex;
+        margin: 80px 0px;
+
+
+    }
+
+.members-of-team{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0px;
+}
+.member-photo{
+    display: flex;
+    position: relative;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.member-info{
+    background-color: #e1e6ea;
+    padding: 20px;
+    
+}
+.member-name{
+    
+    font-size: 16px;
+    color: #292f36;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.member-info p{
+    color:#8d8f92;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    display: contents;
+}
+
+.block-team{
+    display:flex;
+    padding-left: 0px;
+    padding-right: 0px; 
+}
+.box-socmedia{
+    background-color:#3a454d;
+    width: 50px;
+    height: 50px;
+    margin:1px;
+    display:flex;
+}
+.member-socmedia{
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    display:none;
+}
+.block-3{
+    width:100%;
+    padding: 60px 0px;
+}
+
+.block-4{
+    width:100%;
+    background-color:#3a454d;
+    padding: 60px 0px;
+    }
+
+.block-title-black{
+    display: flex;
+}
+
+
+
+.members-of-team:hover .photo{
+    opacity: .75;
+}
+
+.members-of-team:hover .member-info{
+    background-color: #1d2126;
+}
+.members-of-team:hover .member-info p  {
+color:#fff;
+}
+.members-of-team:hover .member-name {
+    color:#fff;
+    }
+.members-of-team:hover .member-socmedia{
+    display: flex;
+}
+.white{
+    color:#fff;
+}
+.icon-h2{
+    width: 10px;
+    background-color: #4e5a62;
+    margin: 30px 15px 30px 0px;
+}
+section{
+    border-bottom: 1px solid #dde1e4;
+   
+}
+.photo{
+    width: 100%;
+}
+
+
+
+.galery{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+
+.box-plus{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-self: center;
+    top: 60px;
+    display:none;
+    
+}
+
+.photo-name{
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #292f36;
+    color: #fff;
+    padding: 15px;
+    display:none;
+    font-size: 18px;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.galery:hover .box-plus{
+    display: flex;
+}
+.galery:hover .photo-name{
+    display: flex;
+}
+.galery:hover .photo {
+    opacity: .75;
+}
+
+.details{
+    background-color: transparent;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 15px 20px;
+    margin: 50px 0px 20px 0px;
+    cursor: pointer;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    
+}
+.button-center{
+    display: flex;
+    justify-content: center;
+}
+.details{
+    display: flex;
+}
+
+.we-do{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0px;
+    justify-content: center;   
+}
+
+.activiti-png{
+    text-align: center;
+}
+.activiti-png img{
+    width:25%;
+    margin:25px;
+}
+
+.activity-name{
+    color:#292f36;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+   
+}
+
+.details-activity{
+    color:#8d8f92;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    line-height: 1.5em;
+}
+   
+.details:hover{
+    background-color:rgba(255, 255, 255, 0.207);
+    color: #fff;
+    border-color: transparent;
+}
+.future-photo-name{
+    color: #fff;
+    font-size: 18px;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.future-description{
+    color: #dcdfe1;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    text-align: left;
+    line-height: 1.5em;
+}
+.map{
+    margin: 50px 0px;
+}
+.contact{
+    color: #292f36;
+    font-size: 20px;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+footer{
+    background-color: #3a454d
+    }
+.fotter-desc{
+    color: #fff;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    text-align: left;
+}
+.footer-cont{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons-block-footer{
+    display: flex;
+}
 
 
 @media(min-width:768px){
@@ -197,6 +523,10 @@ body{
     .logo{
         margin-top:10px;
     } 
+    .col-sm-6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 }
 
 @media(min-width:992px){
@@ -211,14 +541,39 @@ body{
         flex: 0 0 66.6667%;
     max-width: 66.6667%;
     }
-    .menu{
-        justify-content: center;
-    }
-    .search input{
-        width: 150px;
+
+    .col-md-7{
+        flex: 0 0 58.33%;
+        max-width: 58.33%;
     }
     
-}
+    .col-md-5{
+        flex:0 0 41.66%;
+        max-width: 41.66%; 
+    }
+    .col-md-6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-md-12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .discription-block{
+        display:flex;
+    }
+    .col-md-3{ 
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-md-4{
+        flex: 0 0 33.3%;
+        max-width: 33.3%;
+
+    }
+} 
+
 
 @media(min-width:1200px){
     .container{
@@ -245,6 +600,11 @@ body{
     .slider-info{
         width: 100%;
         }   
+
+    .members-of-team{
+        place-items: center;
+    }
+
 }
 
 /*tablet only*/
@@ -254,8 +614,11 @@ body{
         top: 10px;
         right: 40px;
        }
+    .menu{
+        justify-content: space-between;
+    }
 }
 /*laptop*/
 @media(max-width:1199px){
-    
+   
 }
