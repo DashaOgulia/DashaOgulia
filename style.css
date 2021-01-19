@@ -49,6 +49,7 @@ body{
 
 .header-menu{
     align-items: center;
+    justify-content: space-between;
 }
 .menu{
     padding: 0px;
@@ -181,7 +182,7 @@ body{
     border-radius: 5px;
     background: transparent;
     padding: 15px;
-    margin: 5px;;
+    margin: 5px;
 
 }
 
@@ -515,6 +516,118 @@ footer{
 }
 
 
+.form-field-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.form-fields{
+    margin:10px;
+}
+.form-fields:first-child{
+    margin-left:0px;
+}
+.form-fields:last-child{
+    margin-right:0px;
+}
+
+.block-form-fields{
+    display: flex;
+    justify-content: space-between;
+}
+.form-fields input, .field textarea{
+        width:100%;
+        height:40px;
+        padding:10px;
+        background-color: #eaeef1;
+        border-radius: 5px;
+        border:0px;
+        margin:10px 5px;
+    }
+.field textarea{
+    height:160px;
+}
+
+
+.btn-close{
+    text-align:right;
+}
+
+.hide{
+    display:none;
+}
+.show{
+    display:block;
+}
+.view-more-form{
+    background-color:#23b7a4;
+    border:none;
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 16px;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight:bold;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5px;;
+}
+.details-black{
+    background-color: transparent;
+    font-size: 14px;
+    text-align: center;
+    color: #1d2126;
+    border: 2px solid #1d2126;
+    padding: 15px 20px;
+    margin: 30px 30px 10px 30px;
+    cursor: pointer;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    width:160px;
+    
+}
+
+
+.details-black:hover{
+    background-color: rgb(96 125 139 / 30%);
+    color: #1d2126;
+    border-color: transparent;
+}
+.opn-btn-flex{
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.open-form{
+   display:none;
+    position: fixed;
+    bottom: 130px;
+    z-index: 9;
+     
+}
+
+
+form{
+max-width:550px;
+background-color:#fff;
+padding:30px;
+font-size: 14px;
+font-family: "Quattrocento Sans", sans-serif;
+color:#8d8f92;
+font-weight: bold;
+text-transform: uppercase;
+text-align: left;
+}
+.cancel{
+background-color:red;
+width:160px;
+}
+
+
 
 @media(min-width:768px){
     .container{
@@ -572,7 +685,9 @@ footer{
         max-width: 33.3%;
 
     }
+    
 } 
+
 
 @media(min-width:1200px){
     .container{
@@ -589,6 +704,10 @@ footer{
        }
     .search input{
         width: 120px;
+        height: 25px;
+       }
+       .search button{
+           top:3px;
        }
      .logo{
         margin-top:10px;
@@ -604,7 +723,73 @@ footer{
         place-items: center;
     }
 
+    .nav-mobile-menu{
+        width:15px;
+        height:15px;
+        position: relative;
+    }
+    .nav-mobile-menu span{
+        height:1px;
+        background-color: #fff;
+        position:absolute;
+        left:0;
+        right: 0;
+        transition: .25s ease-in-out;
+    }
+    .nav-mobile-menu span:nth-child(1){
+        top:3px;
+       
+    }
+    .nav-mobile-menu span:nth-child(2){
+        top:7px;
+        
+    }
+    .nav-mobile-menu span:nth-child(3){
+       bottom:3px;
+    }
+
+    
+    .hiden-menu{
+        opacity:0;
+        visibility: hidden;
+    }
+    .navigation{
+        position:fixed;
+        top:0;
+        right:0;
+        width:280px;
+        max-width:280px;
+        transition:all 500ms ease-in-out;
+        transform:translateX(150%);
+
+    }
+    .navigation.active-menu{
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+        top: inherit;
+        background-color: #1d2126;
+        display: block;
+        width: 200px;
+    }
+    
+    
+
 }
+
+.nav-mobile-menu.active-menu span:nth-child(1){
+    top:50%;
+    transform:rotate(45deg);
+}
+.nav-mobile-menu.active-menu span:nth-child(2){
+    top:50%;
+    transform:rotate(-45deg);
+}
+
+.nav-mobile-menu.active-menu span:nth-child(3){
+    transform:scale(0);
+}
+
 
 /*tablet only*/
 @media(max-width:991px){
@@ -613,11 +798,40 @@ footer{
         top: 10px;
         right: 40px;
        }
+       
     .menu{
         justify-content: space-between;
     }
+   
+    
 }
 /*laptop*/
 @media(max-width:1199px){
+    
+}
+
+/*.modal{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.3);
+    z-index:100;
+   
    
 }
+
+.modal-block{
+    max-width:550px;
+    margin:200px auto;
+    background-color:#fff;
+    padding:30px;
+    font-size: 14px;
+    font-family: "Quattrocento Sans", sans-serif;
+    color:#8d8f92;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+}
+*/

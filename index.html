@@ -13,16 +13,16 @@
     <header class="header sticky">
         <div class="container">
             <div class="flex-wrap row header-menu">
-                <div class="col-xs-12 col-md-2">
+                <div class="col-md-2">
                     <div class="logo">
                         <a href="">
                             <img src="img/Modest – PSD Landing Page (1).webp" alt="logo">
                         </a>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-8">
+                <div class="col-md-8">
                     <nav>
-                        <ul class="menu">
+                        <ul class="menu navigation hiden-menu">
                             <li><a href="">HOME</a></li>
                             <li><a href="">ABOUT</a></li>
                             <li><a href="">WORK</a></li>
@@ -31,6 +31,11 @@
                             <li><a href="">FEATURES</a></li>
                             <li><a href="">CONTACT</a></li>
                         </ul>
+                        <div class="nav-mobile-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </nav>
                 </div>
                 <div class="col-xs-12 hide-xs col-md-2">
@@ -480,6 +485,9 @@
         
         <section class="block-2">
             
+
+        <section class="block-2">
+            
             <div class="container">
                 <div class="row flex-wrap">
                     <div class="col-xs-12">
@@ -504,18 +512,46 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique nec dolor non, ornare sagittis dolor. Nulla vestibulum lacus sed molestie gravida. 
                             </p>
                             <p>Cras fermentum elit quis magna congue, <span class="bold">vel sodales</span> arcu vestibulum. Nunc lobortis dui magna, quis dapibus lacus </p>
-                                
-                        </div>  
+                               
+                        </div> 
+                        <div class="col-md-6 opn-btn-flex">
+                            <div class="open-form" id="myForm">                          
+                                <form action="#" >
+                                    
+                                    <div class="form-field-info">
+                                        <div class="form-fields">
+                                        <label for="name">Name</label>
+                                        <input name="name" id="name" type="text" placeholder="Name">
+                                    </div>
+                                    <div class="form-fields">
+                                        <label for="email">Email</label>
+                                        <input name="email" id="email" type="email" placeholder="Email">
+                                    </div>
+                                    </div>
+                                    
+                                    <div class="field">
+                                        <label for="message">Your message</label>
+                                        <textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+                    
+                                    <div class="buttons">
+                                        <button class="view-more-form">Sand Messege</button>
+                                    </div>  
+                                    <div class="buttons">
+                                        <button type="button" class="view-more-form cancel" >Close Form</button>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div> 
+                        <div class="open-button">
+                            <button class="details-black" >Open form</button>
+                        </div>
                     </div>
-                            
-                            
-                           
-            </div>
-                        
-                    </div>
-              
-            
-        </section>
+                </div>
+            </div>          
+                   
+    </section>
+        
         
     </main>
     <footer>
@@ -550,6 +586,10 @@
             </div>
         </div>
     </footer>
+
+    
+
+    <script src="app.js"></script>
     
 </body>
 </html>
