@@ -773,9 +773,15 @@ width:160px;
         width: 200px;
     }
     
-    
+   
 
-}
+    form{
+        max-width: 300px;
+    }
+
+    .form-field-info {
+        display: block;
+    }
 
 .nav-mobile-menu.active-menu span:nth-child(1){
     top:50%;
@@ -788,6 +794,7 @@ width:160px;
 
 .nav-mobile-menu.active-menu span:nth-child(3){
     transform:scale(0);
+}
 }
 
 
@@ -802,11 +809,14 @@ width:160px;
     .menu{
         justify-content: space-between;
     }
+
+    
    
     
 }
 /*laptop*/
 @media(max-width:1199px){
+    
     
 }
 
