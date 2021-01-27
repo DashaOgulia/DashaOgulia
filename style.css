@@ -163,6 +163,9 @@ button.slick-next.slick-arrow::before{
 button.slick-prev.slick-arrow::before{
     display:none;
 }
+button.slick-next.slick-arrow {
+    right: -10px;
+}
 
 .slider-slide1{
     position: absolute;
