@@ -69,3 +69,11 @@ function closeForm() {
     document.getElementById("myForm").style.display = "none";
 }
 
+//slider
+
+$(".slider-block").slick({
+    dots:true,
+});
+
+
+      
