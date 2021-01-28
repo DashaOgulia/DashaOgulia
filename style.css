@@ -151,10 +151,17 @@ ul.slick-dots {
     text-align:right;
 }
 ul.slick-dots li.slick-active button:before{
-    color:#fff;
+    color: transparent;
+    background: #fff;
+    
 }
 ul.slick-dots li button:before{
-    font-size:14px;
+    color: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    
 }
 
 button.slick-next.slick-arrow::before{
